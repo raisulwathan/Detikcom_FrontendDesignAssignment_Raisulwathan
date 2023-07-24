@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="Style/register.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <!-- navbar and register section start -->
+    <div class="register">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #007cbd">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html"> <img src="Assets/logo.svg" alt="logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item ps-5 pt-2">
+                <a class="nav-link active" aria-current="page" href="#about">About</a>
+              </li>
+              <li class="nav-item pt-2">
+                <a class="nav-link" href="#mechanism">Mechanism</a>
+              </li>
+              <li class="nav-item pt-2">
+                <a class="nav-link" href="#aggregator">Latest Update</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./register.html"><button type="button" class="btn btn-light">Register</button></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- register form start -->
+
+      <div class="text-regis">
+        <h1>Registrasi</h1>
+      </div>
+      <div class="register-form">
+        <form action="" autocomplete="off">
+          <div class="input-section">
+            <input type="text" placeholder="Nama Perusahaan" required id="input-company" />
+            <span class="asterisk">*</span>
+          </div>
+          <div class="input-section">
+            <input type="text" placeholder="Email" required id="input-email" />
+            <span class="asterisk">*</span>
+          </div>
+          <div class="input-section">
+            <input type="text" placeholder="Nomor telepon" required id="input-nohp" />
+            <span class="asterisk">*</span>
+            <label for="input-nohp" class="label-nohp">isi hanya angka</label>
+          </div>
+          <div class="input-section">
+            <textarea class="form-control" id="message" placeholder="Tentang Perusahaan (Max. 200 character)"></textarea>
+            <span class="asterisk">*</span>
+          </div>
+          <div class="row">
+            <div class="file-logo col-4">
+              <a href=""
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+                  <rect width="199.667" height="200" rx="8" fill="#F8F8F8" />
+                  <path
+                    d="M99.8336 81C94.8217 81.0606 90.032 83.0818 86.4878 86.6319C82.9436 90.1821 80.9257 94.9797 80.8652 100C80.9257 105.02 82.9436 109.818 86.4878 113.368C90.032 116.918 94.8217 118.939 99.8336 119C104.846 118.939 109.635 116.918 113.179 113.368C116.724 109.818 118.742 105.02 118.802 100C118.742 94.9797 116.724 90.1821 113.179 86.6319C109.635 83.0818 104.846 81.0606 99.8336 81ZM110.673 101.357H101.189V110.857H98.4787V101.357H88.9945V98.6429H98.4787V89.1429H101.189V98.6429H110.673V101.357Z"
+                    fill="#1B85E8"
+                  /></svg
+              ></a>
+            </div>
+            <div class="col-8" id="syarat">
+              <ol>
+                <li>Format file: .png, .jpg, .jpeg</li>
+                <li>Maksimal ukuran file 200KB</li>
+                <li>Hindari penggunaan logo berwarna putih</li>
+                <li>Minimal lebar 300px</li>
+              </ol>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 input-section">
+              <input type="text" placeholder="Profil Perusahaan atau Deck (opsional)" required id="profil-perusahaan" />
+              <span class="asterisk">*</span>
+              <label for="profil-perusahaan" class="label-perusahaan">Format file .pdf , maksimal size 20mb</label>
+            </div>
+            <div class="col" id="button-upload">
+              <a class="btn" href="#" role="button">upload file</a>
+            </div>
+          </div>
+          <div class="input-section">
+            <input type="text" placeholder="Link website*" required id="link-website" />
+            <span class="asterisk">*</span>
+            <label for="link-website" class="label-website">Website, Sosial Media, dll. Sertakan protokol URL (https:// atau http://).</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+            <label class="form-check-label" for="flexCheckDefault">Dengan menekan tombol "Daftar", Saya menyetujui syarat dan ketentuan yang berlaku</label>
+          </div>
+          <div class="button-daftar">
+            <a class="btn btn-lg" href="#" role="button">Register</a>
+          </div>
+        </form>
+      </div>
+
+      <!-- register form end -->
+    </div>
+    <!-- navbar and register section end -->
+
+    <!-- footer start -->
+    <footer class="footer">
+      <div class="logo-footer">
+        <img src="Assets/logo.svg" alt="logo" />
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-6">
+          <p>
+            Detikfinance memberikan ruang kepada para startup di Indonesia untuk menunjukkan, serta <br />
+            mempromosikan brand mereka untuk mendapatkan perhatian dari venture capital atau angel investor
+          </p>
+        </div>
+        <div class="col-4">
+          <div class="row row-cols-auto">
+            <a href=""
+              ><div class="col"><img src="Assets/twitter.svg" alt="icon twiter" /></div
+            ></a>
+            <a href="">
+              <div class="col"><img src="Assets/instagram.svg" alt="icon instagram" /></div
+            ></a>
+            <a href="">
+              <div class="col"><img src="Assets/facebook.svg" alt="icon facebook" /></div
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="detik-com">
+        <p>© 2023 Detikcom. All rights reserved</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
